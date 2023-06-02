@@ -3,16 +3,16 @@ $.fn.confirmation = function (options) {
     var onConfirm = options.onConfirm || function () { };
 
     $(this).click(function () {
-        var confirmationDialog = $('<div class="popover" role="popover">' +
+        var confirmationDialog = $('<div style="min-width: 240px;">' +
             '<div class="popover-arrow"></div>' +
-            '<div class="popover-inner"></div>' +
+            '<div class="popover-inner border-0"></div>' +
             '<div class="d-flex justify-content-between">' +
             '<span class="btn btn-sm btn-danger w-50">Yes</span>' +
             '<span class="btn btn-sm btn-secondary w-50">No</span>' +
             '</div>' +
             '</div>');
 
-        confirmationDialog.find('.popover-inner').text(options.content || 'Are you sure?');
+        confirmationDialog.find('.popover-inner').html(options.content || 'Are you sure?');
         confirmationDialog.find('.btn-primary').click(function () {
             onConfirm();
             confirmationDialog.popover('hide');
