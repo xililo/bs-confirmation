@@ -22,7 +22,7 @@ $.fn.confirmation = function (options) {
             title: title,
             content: confirmationDialog,
             html: true,
-            trigger: 'manual'
+            placement: "top",
         });
 
         $(this).popover('show');
