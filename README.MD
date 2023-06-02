@@ -8,7 +8,7 @@
 - Bootstrap (version 5.x or later) with poop
 - Popper
 
-* `bs-comfirmation.js` rely on the third party library Popper for positioning. You must include `popper.min.js` before `bootstrap.js`, or use one `bootstrap.bundle.min.js` which contains Popper.
+#### NOTE: `bs-comfirmation.js` rely on the third party library Popper for positioning. You must include `popper.min.js` before `bootstrap.js`, or use one `bootstrap.bundle.min.js` which contains Popper.
 
 ## Installation
 
@@ -28,8 +28,8 @@
 <body>
   <!-- Your HTML content here -->
 
-  <!-- Include Bootstrap JS -->
-  <script src="path/to/bootstrap.js"></script>
+  <!-- Include Bootstrap Bundle JS -->
+  <script src="path/to/bootstrap.bundle.min.js"></script>
   <!-- Include bs-comfirmation.js plugin -->
   <script src="path/to/bs-comfirmation.js"></script>
 </body>
@@ -83,7 +83,7 @@ $('.confirmation-btn').confirmation({
   }
 });
 ```
-Inside the onConfirm function, you can execute any custom logic or trigger any necessary operations.
+Inside the `onConfirm` function, you can execute any custom logic or trigger any necessary operations.
 
 ## Styling
 comming soon.
