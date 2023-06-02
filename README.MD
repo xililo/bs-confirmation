@@ -2,11 +2,13 @@
 
 `bs-comfirmation.js` is a jQuery plugin that provides a confirmation dialog popover for Bootstrap-based applications. It allows you to easily add confirmation functionality to buttons or any other elements in your web application.
 
+![Screenshot](/img/example.png)
+
 ## Requirements
 
 - jQuery library (version 3.x or later)
-- Bootstrap (version 5.x or later) with poop
 - Popper
+- Bootstrap (version 5.x or later) with poop
 
 #### NOTE: `bs-comfirmation.js` rely on the third party library Popper for positioning. You must include `popper.min.js` before `bootstrap.js`, or use one `bootstrap.bundle.min.js` which contains Popper.
 
@@ -16,6 +18,12 @@
 2. Include the jQuery library and Bootstrap CSS and JS files in your HTML file.
 3. Include the `bs-comfirmation.js` plugin file after the jQuery and Bootstrap files.
 
+## CDN Installation
+```html
+<script src="https://cdn.statically.io/gh/xililo/bs-confirmation/734db244/bs-confirmation.min.js"></script>
+```
+
+### Example
 ```html
 <!DOCTYPE html>
 <html>
@@ -31,7 +39,9 @@
   <!-- Include Bootstrap Bundle JS -->
   <script src="path/to/bootstrap.bundle.min.js"></script>
   <!-- Include bs-comfirmation.js plugin -->
-  <script src="path/to/bs-comfirmation.js"></script>
+  <!-- <script src="path/to/bs-comfirmation.js"></script> -->
+  <script src="https://cdn.statically.io/gh/xililo/bs-confirmation/734db244/bs-confirmation.min.js"></script>
+
 </body>
 </html>
 ```
