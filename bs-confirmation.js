@@ -33,6 +33,8 @@ $.fn.confirmation = function (options) {
         confirmationDialog.find('#' + btnID1).click(function () {
             //console.log('yes clicked');
             onConfirm();
+            $(selector).popover('hide');
+
         });
         confirmationDialog.find('#' + btnID2).click(function () {
             //console.log('No clicked');
